@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F6C8955106D5AA3AC1CD782 /* Pods_Certi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A0336213A69E5120B46210 /* Pods_Certi.framework */; };
 		8F9BDABB28E55F3300C8FD14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BDABA28E55F3300C8FD14 /* AppDelegate.swift */; };
 		8F9BDABD28E55F3300C8FD14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BDABC28E55F3300C8FD14 /* SceneDelegate.swift */; };
 		8F9BDABF28E55F3300C8FD14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BDABE28E55F3300C8FD14 /* ViewController.swift */; };
@@ -31,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		205C9DA796082B2E06D6689A /* Pods-Certi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Certi.release.xcconfig"; path = "Target Support Files/Pods-Certi/Pods-Certi.release.xcconfig"; sourceTree = "<group>"; };
+		77A0336213A69E5120B46210 /* Pods_Certi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Certi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9BDAB728E55F3300C8FD14 /* Certi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Certi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9BDABA28E55F3300C8FD14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F9BDABC28E55F3300C8FD14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		8F9BDAE528E56C6000C8FD14 /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		8F9BDAED28E56C7E00C8FD14 /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		8F9BDAEF28E56C8400C8FD14 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		C5AC8DE3DC3096C1CFFC5234 /* Pods-Certi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Certi.debug.xcconfig"; path = "Target Support Files/Pods-Certi/Pods-Certi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +65,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F6C8955106D5AA3AC1CD782 /* Pods_Certi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CFFCF78C3411FB951B4622E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5AC8DE3DC3096C1CFFC5234 /* Pods-Certi.debug.xcconfig */,
+				205C9DA796082B2E06D6689A /* Pods-Certi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8F9BDAAE28E55F3300C8FD14 = {
 			isa = PBXGroup;
 			children = (
 				8F9BDAB928E55F3300C8FD14 /* Certi */,
 				8F9BDAB828E55F3300C8FD14 /* Products */,
+				8CFFCF78C3411FB951B4622E /* Pods */,
+				F2D2843E09B49C0B7D2C4E9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +169,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		F2D2843E09B49C0B7D2C4E9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77A0336213A69E5120B46210 /* Pods_Certi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F9BDACB28E55F3400C8FD14 /* Build configuration list for PBXNativeTarget "Certi" */;
 			buildPhases = (
+				D093EA23D1AA0CEC6B9FD2A3 /* [CP] Check Pods Manifest.lock */,
 				8F9BDAB328E55F3300C8FD14 /* Sources */,
 				8F9BDAB428E55F3300C8FD14 /* Frameworks */,
 				8F9BDAB528E55F3300C8FD14 /* Resources */,
+				BEE595472957CE3F602E752A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +247,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BEE595472957CE3F602E752A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Certi/Pods-Certi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Certi/Pods-Certi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Certi/Pods-Certi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D093EA23D1AA0CEC6B9FD2A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Certi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F9BDAB328E55F3300C8FD14 /* Sources */ = {
@@ -382,6 +451,7 @@
 		};
 		8F9BDACC28E55F3400C8FD14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5AC8DE3DC3096C1CFFC5234 /* Pods-Certi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -409,6 +479,7 @@
 		};
 		8F9BDACD28E55F3400C8FD14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 205C9DA796082B2E06D6689A /* Pods-Certi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
